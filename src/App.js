@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
+import Login from "./components/Login";
+import DashBoard from "./components/Dashboard";
+import Register from "./components/Register";
+import LogoutButton from "./components/LogoutButton";
+import ProfilePage from "./components/ProfilePage";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
+  const [user, setUser] = useState(null); // To track the logged-in user
+
+  const handleLogin = (userData) => {
+    setUser(userData); 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/login" element={<Login onLogin={handleLogin} />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/Dashboard" element={user ? <DashBoard /> : <Login onLogin={handleLogin} />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path='/logout' element={ <LogoutButton /> } />
+          <Route path="/forgot-password" element= { <ForgotPassword /> } />
+          
+        </Routes>
+      </Router>
     </div>
   );
 }

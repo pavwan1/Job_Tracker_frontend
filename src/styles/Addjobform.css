@@ -1,0 +1,40 @@
+.add-job-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  
+}
+
+.add-job-form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-job-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-job-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-job-form button:hover {
+  background-color: #0056b3;
+}

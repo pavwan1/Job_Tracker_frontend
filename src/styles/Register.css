@@ -1,0 +1,95 @@
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+form div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+  font-weight: 900;
+}
+
+input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.link{
+  padding: 2px;
+  margin-top: 10px;
+  font-weight: bolder;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+
+.linkL{
+  color: #eef603;
+}
+
+.linkL:hover{
+  color: red;
+}

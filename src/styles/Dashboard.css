@@ -1,0 +1,25 @@
+.jobs button{
+  border-radius: 100px;
+  margin: 0px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.jobs button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.job-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
